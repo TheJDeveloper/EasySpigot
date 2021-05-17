@@ -1,6 +1,6 @@
 #EasySpigot
 A library to simplify certain tasks in Spigot Development
-##Maven Dependency / Repository
+##Maven Repository
 ```xml
     <repositories>
         <repository>
@@ -8,7 +8,9 @@ A library to simplify certain tasks in Spigot Development
             <url>https://maven.pkg.github.com/TheJDeveloper/EasySpigot</url>
         </repository>
     </repositories>
-
+```
+##Maven Dependency
+```xml
     <dependencies>
         <dependency>
             <groupId>net.thejrdev</groupId>
