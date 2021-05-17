@@ -20,6 +20,14 @@ public class EasyYML {
         this.config = config;
     }
 
+    /** Creates an ItemStack from the config file
+     *
+     * @param path Path to the ItemStack
+     * @return new ItemStack
+     * @throws IllegalArgumentException
+     * @throws NullPointerException
+     * @throws MissingConfigArgument
+     */
     public ItemStack createItemStack(@NotNull String path) throws IllegalArgumentException, NullPointerException, MissingConfigArgument {
 
         ConfigurationSection section = config.getConfigurationSection(path);
@@ -36,6 +44,11 @@ public class EasyYML {
         if(keys.contains("name")){
             meta.setDisplayName(section.getString("name"));
         }
+
+        if(keys.contains("count")){
+            item.setAmount(section.getInt("amount"));
+        }
+
 
         if(keys.contains("lore")){
             meta.setLore(section.getStringList("lore"));
