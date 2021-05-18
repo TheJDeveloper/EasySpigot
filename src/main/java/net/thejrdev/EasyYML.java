@@ -119,22 +119,4 @@ public class EasyYML {
         }
         return items;
     }
-
-
-
 }
-
-/*
-
-item:
-    material: <material value>
-    name: <display name>
-    lore:
-        -<lore line 1>
-        -<lore line 2>
-        (continue for each line of lore)
-    enchantments:
-        <enchantment enum name>: <level>
-
-
- */
